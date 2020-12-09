@@ -43,7 +43,6 @@
 
   $sql1 = ("SELECT * FROM bibliotekaAutor"); 
   $sql2 = ("SELECT * FROM bibliotekaTytul"); 
-  echo("<p>Zadanie 0: Funkcja wypożyczania</h1>");
   $result=$conn->query($sql1);
   echo("<form action='wyporzyczanie.php' method='POST'>");
   echo("<label for='Autor'><p>Wybierz autora:</p></label>");
@@ -66,8 +65,8 @@
 
   
   $sql = ('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytul WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
-  echo("<p>Zadanie 1: Wyświetlenie pełnej bazy danych w blibiotece</h1>");
-  echo("<p>Użyte zapytanie SQL: ".$sql."</h4>");
+  echo("<p>Wyświetlenie pełnej bazy danych w blibiotece</h1>");
+  
   $result=$conn->query($sql);
   echo("<table>");
   echo("<th>id</th>");
