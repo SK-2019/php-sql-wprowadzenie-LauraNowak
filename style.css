@@ -77,7 +77,7 @@ a {
 
 }
 
-.container {
+/* .container {
   background-color: lightgray;
   display: flex;
   flex-wrap: wrap;
@@ -85,18 +85,18 @@ a {
 
 .item {
   margin: 10px;
-}
+} */
 
-.nav_link {
+/* .nav_link {
   background-color:#ffffff;
   color:#000000;
   font-weight: bold;
   text-decoration: none;
   padding: 1rem;
   margin-inline-start: auto;
-}
+} */
 
-.item_colorBlue {
+/* .item_colorBlue {
   background-color: lightblue;
   width: 20%;
 }
@@ -104,4 +104,4 @@ a {
 .item_colorGreen {
   background-color: rgb(72, 219, 27);
   width: 20%;
-}
+} */
