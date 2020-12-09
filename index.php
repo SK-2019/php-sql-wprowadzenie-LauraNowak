@@ -12,7 +12,7 @@
     <p class="space"></p>
     <a class="nav_link" href="pracownicy/funkcjeAgregujace.php">Funkcje Agregujace</a>
     <p class="space"></p>
-    <a class="nav_link" href="pracownicy/index.php">Strona główna</a>
+    <a class="nav_link" href="index.php">Strona główna</a>
     <p class="space"></p>
     <a class="nav_link" href="pracownicy/pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
     <p class="space"></p>
