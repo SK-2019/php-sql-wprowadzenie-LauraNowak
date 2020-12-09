@@ -3,8 +3,8 @@
 <head>
         <link rel="stylesheet" href="style.css">
         
-
-
+</head>
+<body>
 <div class="button"><a href="https://github.com/SK-2019/php-sql-wprowadzenie-LauraNowak">Github</a></div>
 
 <div class="nav">
@@ -29,7 +29,8 @@
     <a class="nav_link" href="biblioteka/wyporzyczanie.php">Wyporzyczanie</a>
 </div>
 
-<h1> Delete </h1>
+
+<h1> Strona główna </h1>
 <h2> Laura Nowak 2Ti gr 2 nr 23 </h2>
 
 <?php

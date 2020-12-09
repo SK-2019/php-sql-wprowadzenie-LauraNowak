@@ -7,7 +7,7 @@
 <body>
 <div class="button"><a href="https://github.com/SK-2019/php-sql-wprowadzenie-LauraNowak">Github</a></div>
 
-<<div class="nav">
+<div class="nav">
     <a class="nav_link" href="pracownicy/pracownicy.php">Pracownicy</a>
     <p class="space"></p>
     <a class="nav_link" href="pracownicy/funkcjeAgregujace.php">Funkcje Agregujace</a>
