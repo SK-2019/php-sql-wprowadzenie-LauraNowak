@@ -45,7 +45,7 @@
   $sql2 = ("SELECT * FROM bibliotekaTytul"); 
   echo("<p>Zadanie 0: Funkcja wypożyczania</h1>");
   $result=$conn->query($sql1);
-  echo("<form action='wypozyczalnia.php' method='POST'>");
+  echo("<form action='wyporzyczanie.php' method='POST'>");
   echo("<label for='Autor'><p>Wybierz autora:</p></label>");
   echo("<select name='Autor' id='id_autor'>");
   while($row=$result->fetch_assoc()) 
