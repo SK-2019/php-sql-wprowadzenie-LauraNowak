@@ -19,7 +19,7 @@
     <p class="space"></p>
     <a class="nav_link" href="funkcjeAgregujace.php">Funkcje Agregujace</a>
     <p class="space"></p>
-    <a class="nav_link" href="index.php">Strona główna</a>
+    <a class="nav_link" href="index.php">Strona głuwna</a>
     <p class="space"></p>
     <a class="nav_link" href="pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
     <p class="space"></p>
