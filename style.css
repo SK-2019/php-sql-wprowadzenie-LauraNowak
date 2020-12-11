@@ -79,18 +79,18 @@ a {
 }
 
 .name {
-  background-color: #BCF5EC;
+  background-color: yellow;
   width: 100%;
   font-size: 40px;
 }
 
 .menu {
-  background-color: #BCF5EC;
+  background-color: red;
   width: 15%;
 }
 
 .bok {
-  background-color:#BCF5EC;
+  background-color:blue;
   width: 80%;
 }
 
