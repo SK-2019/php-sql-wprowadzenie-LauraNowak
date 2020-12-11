@@ -2,13 +2,13 @@ body {
   background-color:#ADD4F0;
 }
 table, th, td {
-  border: 4px solid rgb(71, 88, 238);
+  border: 4px solid #0A3757;
 }
 td {
   text-align: center;
 }
 th {
-  background-color: #0A3757;
+  background-color: #ADD4F0;
   color: rgb(9, 230, 238);
 }
 table {
