@@ -46,6 +46,7 @@ h2 {
 a {
   box-shadow: rgb(102, 100, 100);
   bottom: auto;
+  color: black;
 }
 
 
@@ -96,8 +97,8 @@ a {
 
 .nav_link {
   color: black;
-  background-color:#2E5E53;
-  color:#5FA89D;
+  background-color:white;
+  color:green;
   border: 4px solid;
   padding: 8px;
   text-align: center;
