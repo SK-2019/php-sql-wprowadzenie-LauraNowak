@@ -91,7 +91,7 @@ a {
 
 .bok {
   background-color:#BCF5EC;
-  width: 40%;
+  width: 80%;
 }
 
 .nav_link {
@@ -113,7 +113,7 @@ li {
 }
 
 .container {
-  background-color: #F7EDE2;
+  background-color: #BCF5EC;
   display: flex;
   flex-wrap: wrap;
 }
