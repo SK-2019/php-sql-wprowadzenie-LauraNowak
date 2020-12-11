@@ -98,16 +98,16 @@ a {
   color: black;
   background-color:#2E5E53;
   color:#5FA89D;
-  border: 3px solid;
-  padding: 10px;
+  border: 4px solid;
+  padding: 8px;
   text-align: center;
   display: block;
-  font-size: 13px;
+  font-size: 15px;
   margin-left: 10px;
   margin-right: 50px;
 }
 
 li {
-  margin-bottom:10px; 
-  margin-top:20px; 
+  margin-bottom:8px; 
+  margin-top:15px; 
 }
