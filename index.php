@@ -7,7 +7,7 @@
 <body>
 <div class="button"><a href="https://github.com/SK-2019/php-sql-wprowadzenie-LauraNowak">Github</a></div>
 
-<div class="nav">
+<!-- <div class="nav">
     <a class="nav_link" href="pracownicy.php">Pracownicy</a>
     <p class="space"></p>
     <a class="nav_link" href="funkcjeAgregujace.php">Funkcje Agregujace</a>
@@ -27,12 +27,53 @@
     <a class="nav_link" href="ksiazki.php">Książki</a>
     <p class="space"></p>
     <a class="nav_link" href="wyporzyczanie.php">Wyporzyczanie</a>
+</div> -->
+
+
+<div class="name" >
+<h2> Laura Nowak 2Ti gr 2 nr 23 </h2>
 </div>
 
+<div class="menu">
+<h2> MENU: </h2>
+<ul>
+<div>
+<li class="nav_link"><a href="https://github.com/SK-2019/php-sql-wprowadzenie-LauraNowak">Github</a></li>
+</div>
+<div>
+<li class="nav_link"><a href="pracownicy.php">Pracownicy</a></li>
+</div>
+<div>
+<li class="nav_link"><a href="funkcjeAgregujace.php">Funkcje Agregujace</a></li>
+</div>
+<div>
+<li class="nav_link"><a href="index.php">Strona główna</a></li>
+</div>
+<div>
+<li class="nav_link"><a href="pracownicyiorganizacja.php">Pracownicy i Organizacja</a></li>
+</div>
+<div>
+<li class="nav_link"><a href="dataiczas.php">Data i czas</a></li>
+</div>
+<div>
+<li class="nav_link"><a href="formularz.html">Formularz</a></li>
+</div>
+<div>
+<li class="nav_link"><a href="daneDoBazy.php">Dane Do Bazy</a></li>
+</div>
+<div>
+<li class="nav_link"><a href="function.php">Function</a></li>
+</div>
+<div>
+<li class="nav_link"><a href="ksiazki.php">Książki</a></li>
+</div>
+<div>
+<li class="nav_link"><a href="wyporzyczanie.php">Wyporzyczanie</a></li>
+</div>
+</ul>
+</div>
 
-<h1> Strona główna </h1>
-<h2> Laura Nowak 2Ti gr 2 nr 23 </h2>
-
+<div class="bok">
 
 <?php
 
@@ -164,6 +205,6 @@ $result = $conn->query('SELECT * FROM pracownicy where imie like "%a" and (dzial
             echo("</table>");
 
 ?>
-
+</div>
 </body>
 </html>
