@@ -80,25 +80,25 @@ a {
 }
 
 .name {
-  background-color: yellow;
+  background-color:#572C0A;
   width: 100%;
   font-size: 40px;
 }
 
 .menu {
-  background-color: red;
+  background-color:#69401F;
   width: 15%;
 }
 
 .bok {
-  background-color:blue;
+  background-color: #A85613;
   width: 80%;
 }
 
 .nav_link {
   color: black;
-  background-color:white;
-  color:green;
+  background-color: #EFBC91;
+  color:#D66D18;
   border: 4px solid;
   padding: 8px;
   text-align: center;
