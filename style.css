@@ -8,7 +8,7 @@ td {
   text-align: center;
 }
 th {
-  background-color: #6396bb;
+  background-color: #4b7b9e;
   color: rgb(125, 203, 206);
 }
 table {
@@ -46,7 +46,7 @@ h2 {
 a {
   box-shadow: rgb(102, 100, 100);
   bottom: auto;
-  color: black;
+  color: rgb(119, 119, 119);
 }
 
 
