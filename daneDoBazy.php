@@ -29,7 +29,7 @@
 
 <div class="bok">
          
-    <h1>Dodawanie:</h1>
+    <p>Dodawanie:</p>
 
 
 <form class="formularz" action="insert.php" method="POST">
@@ -40,7 +40,7 @@
     <input type="submit" value="Dodaj">
 </form>
        
-        <h1>Usuwanie :</h1>
+        <p>Usuwanie :</p>
        
 <form action="delete.php" method="POST">
        <input type="text" name="id" placeholder="ID"></br>

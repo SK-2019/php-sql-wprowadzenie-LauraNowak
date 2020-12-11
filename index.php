@@ -7,7 +7,7 @@
 <body>
 <div class="container" >
 <div class="name" >
-<h2>              Laura Nowak 2Ti gr 2 nr 23 </h2>
+<h2> Laura Nowak 2Ti gr 2 nr 23 </h2>
 </div>
 
 <div class="menu">
