@@ -77,3 +77,17 @@ a {
 
 }
 
+.name {
+  background-color: #BBADA1;
+  width: 100%;
+}
+
+.menu {
+  background-color: #AA9D94;
+  width: 20%;
+}
+
+.bok {
+  background-color:#F7EDE2;
+  width: 70%;
+}
