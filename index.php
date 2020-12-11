@@ -5,8 +5,6 @@
         
 </head>
 <body>
-<div class="button"><a href="https://github.com/SK-2019/php-sql-wprowadzenie-LauraNowak">Github</a></div>
-
 <div class="container" >
 <div class="name" >
 <h2> Laura Nowak 2Ti gr 2 nr 23 </h2>
