@@ -111,3 +111,9 @@ li {
   margin-bottom:8px; 
   margin-top:15px; 
 }
+
+.container {
+  background-color: #F7EDE2;
+  display: flex;
+  flex-wrap: wrap;
+}
