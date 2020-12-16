@@ -96,7 +96,7 @@
 //   echo("</select>");
   
   
-  
+require_once("connect.php");
   $sql = ('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytul; WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
   echo("<p>WSZYSTKO</p>");
   $result=$conn->query($sql);
