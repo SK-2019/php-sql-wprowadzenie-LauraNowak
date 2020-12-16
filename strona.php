@@ -23,7 +23,7 @@
 <li class="nav_link"><a href="daneDoBazy.php">Dane Do Bazy</a></li>
 <li class="nav_link"><a href="function.php">Function</a></li>
 <li class="nav_link"><a href="ksiazki.php">Książki</a></li>
-<li class="nav_link"><a href="wyporzyczanie.php">Wyporzyczanie</a></li>
+<!-- <li class="nav_link"><a href="wyporzyczanie.php">Wyporzyczanie</a></li> -->
 </ul>
 </div>
 
