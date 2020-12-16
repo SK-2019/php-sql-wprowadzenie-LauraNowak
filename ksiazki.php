@@ -56,7 +56,7 @@
 
   
   $sql = ('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytul WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
-  echo("<p>pEŁNA BIBLIOTEKA</h1>");
+  echo("<p>Wyświetlenie pełnej bazy danych w blibiotece</h1>");
   
   $result=$conn->query($sql);
   echo("<table>");
@@ -85,7 +85,7 @@
   
   
   $sql = ("SELECT * FROM bibliotekaTytul");
-  echo("<p>KSIĄŻKI</p>");
+  echo("<p>książki</p>");
   $result=$conn->query($sql);
   echo("<select name='Tytuł' id='id_Tytuł'>");
   while($row=$result->fetch_assoc())
@@ -97,21 +97,23 @@
   
   
   
-  $sql = ('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytul; WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
-  echo("<p>WSZYSTKO</p>");
-  $result=$conn->query($sql);
-  echo("<table border=1>");
-  echo("<th>id</th>");
-  echo("<th>Autor</th>");
-  echo("<th>Tytuł</th>");
-  while($row=$result->fetch_assoc())
-  {
-  echo("<tr>");
-  echo("<td>".$row["id"]."</td><td>".$row["Autor"]."</td><td>".$row["Tytuł"]);
-  echo("</tr>");
-  }
-  echo("</table>");
+//   $sql = ('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytul; WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
+//   echo("<p>WSZYSTKO</p>");
+//   $result=$conn->query($sql);
+//   echo("<table border=1>");
+//   echo("<th>id</th>");
+//   echo("<th>Autor</th>");
+//   echo("<th>Tytuł</th>");
+//   while($row=$result->fetch_assoc())
+//   {
+//   echo("<tr>");
+//   echo("<td>".$row["id"]."</td><td>".$row["Autor"]."</td><td>".$row["Tytuł"]);
+//   echo("</tr>");
+//   }
+//   echo("</table>");
   
+
+//lek
     require_once("connect.php");
     $sql = ("SELECT * FROM bibliotekaAutor");
     echo("<p>LISTA Z NAZWAMI AUTORÓW</p>");
