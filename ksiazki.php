@@ -36,7 +36,7 @@
   $sql2 = ("SELECT * FROM bibliotekaTytul"); 
   $result=$conn->query($sql1);
   echo("<form action='wyporzyczanie.php' method='POST'>");
-  echo("<label for='Autor'><p>Wybierz autora:</p></label>");
+  echo("<label for='Autor'><p>WYBIERZ AUTORA:</p></label>");
   echo("<select name='Autor' id='id_autor'>");
   while($row=$result->fetch_assoc()) 
   {
@@ -44,7 +44,7 @@
   }
   echo("</select>");
   $result=$conn->query($sql2);
-  echo("<label for='Tytuł'><p>Wybierz tytuł:</p></label>");
+  echo("<label for='Tytuł'><p>WYBIERZ TYTUŁ:</p></label>");
   echo("<select name='Tytuł' id='id_tytuł'>");
   while($row=$result->fetch_assoc())
   {
@@ -56,7 +56,7 @@
 
   
   $sql = ('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytul WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
-  echo("<p>Wyświetlenie pełnej bazy danych w blibiotece</h1>");
+  echo("<p>pEŁNA BIBLIOTEKA</h1>");
   
   $result=$conn->query($sql);
   echo("<table>");
@@ -85,7 +85,7 @@
   
   
   $sql = ("SELECT * FROM bibliotekaTytul");
-  echo("<p>książki</p>");
+  echo("<p>KSIĄŻKI</p>");
   $result=$conn->query($sql);
   echo("<select name='Tytuł' id='id_Tytuł'>");
   while($row=$result->fetch_assoc())
@@ -112,8 +112,6 @@
   }
   echo("</table>");
   
-
-//lek
     require_once("connect.php");
     $sql = ("SELECT * FROM bibliotekaAutor");
     echo("<p>LISTA Z NAZWAMI AUTORÓW</p>");
