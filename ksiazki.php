@@ -30,73 +30,73 @@
 <div class="bok">
 <?php
   
-//   require_once("connect.php");
+  require_once("connect.php");
 
-//   $sql1 = ("SELECT * FROM bibliotekaAutor"); 
-//   $sql2 = ("SELECT * FROM bibliotekaTytul"); 
-//   $result=$conn->query($sql1);
-//   echo("<form action='wyporzyczanie.php' method='POST'>");
-//   echo("<label for='Autor'><p>WYBIERZ AUTORA:</p></label>");
-//   echo("<select name='Autor' id='id_autor'>");
-//   while($row=$result->fetch_assoc()) 
-//   {
-//       echo("<option value=".$row['id_autor'].">".$row['Autor']."</option>");
-//   }
-//   echo("</select>");
-//   $result=$conn->query($sql2);
-//   echo("<label for='Tytuł'><p>WYBIERZ TYTUŁ:</p></label>");
-//   echo("<select name='Tytuł' id='id_tytuł'>");
-//   while($row=$result->fetch_assoc())
-//   {
-//       echo("<option value=".$row['id_tytuł'].">".$row['Tytuł']."</option>");
-//   }
-//   echo("</select>");
-//   echo("<input type='submit' value='Wypożycz'>'");
-//   echo("</form>");
+  $sql1 = ("SELECT * FROM bibliotekaAutor"); 
+  $sql2 = ("SELECT * FROM bibliotekaTytul"); 
+  $result=$conn->query($sql1);
+  echo("<form action='wyporzyczanie.php' method='POST'>");
+  echo("<label for='Autor'><p>WYBIERZ AUTORA:</p></label>");
+  echo("<select name='Autor' id='id_autor'>");
+  while($row=$result->fetch_assoc()) 
+  {
+      echo("<option value=".$row['id_autor'].">".$row['Autor']."</option>");
+  }
+  echo("</select>");
+  $result=$conn->query($sql2);
+  echo("<label for='Tytuł'><p>WYBIERZ TYTUŁ:</p></label>");
+  echo("<select name='Tytuł' id='id_tytuł'>");
+  while($row=$result->fetch_assoc())
+  {
+      echo("<option value=".$row['id_tytuł'].">".$row['Tytuł']."</option>");
+  }
+  echo("</select>");
+  echo("<input type='submit' value='Wypożycz'>'");
+  echo("</form>");
 
   
-//   $sql = ('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytul WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
-//   echo("<p>Wyświetlenie pełnej bazy danych w blibiotece</h1>");
+  $sql = ('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytul WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
+  echo("<p>Wyświetlenie pełnej bazy danych w blibiotece</h1>");
   
-//   $result=$conn->query($sql);
-//   echo("<table>");
-//   echo("<th>id</th>");
-//   echo("<th>Autor</th>");
-//   echo("<th>Tytuł</th>");
-//   while($row=$result->fetch_assoc())
-//   {
-//       echo("<tr>");
-//       echo("<td>".$row["id"]."</td><td>".$row["Autor"]."</td><td>".$row["Tytuł"]);
-//       echo("</tr>");
-//   }
-//   echo("</table>");
+  $result=$conn->query($sql);
+  echo("<table>");
+  echo("<th>id</th>");
+  echo("<th>Autor</th>");
+  echo("<th>Tytuł</th>");
+  while($row=$result->fetch_assoc())
+  {
+      echo("<tr>");
+      echo("<td>".$row["id"]."</td><td>".$row["Autor"]."</td><td>".$row["Tytuł"]);
+      echo("</tr>");
+  }
+  echo("</table>");
 
-//   $sql = ("SELECT * FROM bibliotekaAutor");
-//   echo("<p>Autorzy</p>");
-//   $result=$conn->query($sql);
-//   echo("<select name='Autor' id='id_autor'>");
-//   while($row=$result->fetch_assoc())
-//   {
-//   echo("<option value=".$row["id_autor"]."</option><option vealu=>".$row["Autor"]."</option>");
-//   }
-//   echo("<input type='Submit' value='Autor'><br>");
-//   echo("</select>");
+  $sql = ("SELECT * FROM bibliotekaAutor");
+  echo("<p>Autorzy</p>");
+  $result=$conn->query($sql);
+  echo("<select name='Autor' id='id_autor'>");
+  while($row=$result->fetch_assoc())
+  {
+  echo("<option value=".$row["id_autor"]."</option><option vealu=>".$row["Autor"]."</option>");
+  }
+  echo("<input type='Submit' value='Autor'><br>");
+  echo("</select>");
  
   
   
-//   $sql = ("SELECT * FROM bibliotekaTytul");
-//   echo("<p>książki</p>");
-//   $result=$conn->query($sql);
-//   echo("<select name='Tytuł' id='id_Tytuł'>");
-//   while($row=$result->fetch_assoc())
-//   {
-//   echo("<option vealu=>".$row["id_tytuł"]."</option><option vealu=>".$row["Tytuł"]."</option>");
-//   }
-//   echo("<input type='Submit' value='książka'><br>");
-//   echo("</select>");
+  $sql = ("SELECT * FROM bibliotekaTytul");
+  echo("<p>książki</p>");
+  $result=$conn->query($sql);
+  echo("<select name='Tytuł' id='id_Tytuł'>");
+  while($row=$result->fetch_assoc())
+  {
+  echo("<option vealu=>".$row["id_tytuł"]."</option><option vealu=>".$row["Tytuł"]."</option>");
+  }
+  echo("<input type='Submit' value='książka'><br>");
+  echo("</select>");
   
   
-require_once("connect.php");
+  
   $sql = ('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytul; WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
   echo("<p>WSZYSTKO</p>");
   $result=$conn->query($sql);
