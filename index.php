@@ -31,7 +31,7 @@
 
 <?php
 
-$conn = new mysqli( "mysql-lauranowak.alwaysdata.net" , "220134" , "Haslo123" , "lauranowak_23");
+$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
 $sql = 'SELECT * FROM pracownicy';
 
        
@@ -54,7 +54,7 @@ $result = $conn->query($sql);
         echo("<p>ZADANIE 2</p>");
        
 
-        $conn = new mysqli( "mysql-lauranowak.alwaysdata.net" , "220134" , "Haslo123" , "lauranowak_23");
+        $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
 $result = $conn->query('SELECT * FROM pracownicy where imie like "%a"');
         
         echo("<table>");
@@ -73,7 +73,7 @@ $result = $conn->query('SELECT * FROM pracownicy where imie like "%a"');
         echo("<p>ZADANIE 3</p>");
       
 
-        $conn = new mysqli( "mysql-lauranowak.alwaysdata.net" , "220134" , "Haslo123" , "lauranowak_23");
+        $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
 $result = $conn->query('SELECT * FROM pracownicy where imie like "%a" and (dzial=1 or dzial=4)');
         echo("<table>");
         echo("<th>id</th>");
@@ -95,7 +95,7 @@ $result = $conn->query('SELECT * FROM pracownicy where imie like "%a" and (dzial
 
 
     echo("<p>ZADANIE 4</p>");        
-    $conn = new mysqli( "mysql-lauranowak.alwaysdata.net" , "220134" , "Haslo123" , "lauranowak_23");
+    $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
         $result = $conn->query('SELECT imie, dzial, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and zarobki<30 and (dzial=1 or dzial=2)');
             echo("<table>");
             echo("<th>Imie</th>");
@@ -111,7 +111,7 @@ $result = $conn->query('SELECT * FROM pracownicy where imie like "%a" and (dzial
                     
 
     echo("<p>ZADANIE 5</p>");
-    $conn = new mysqli( "mysql-lauranowak.alwaysdata.net" , "220134" , "Haslo123" , "lauranowak_23");
+    $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
         $result = $conn->query('SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org group by dzial');
             echo("<table>");
             echo("<th>dzial</th>");
@@ -126,7 +126,7 @@ $result = $conn->query('SELECT * FROM pracownicy where imie like "%a" and (dzial
         
 
     echo("<p>ZADANIE 6</p>");
-    $conn = new mysqli( "mysql-lauranowak.alwaysdata.net" , "220134" , "Haslo123" , "lauranowak_23");
+    $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
         $result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org group by dzial');
             echo("<table>");
             echo("<th>Dział</th>");
@@ -143,7 +143,7 @@ $result = $conn->query('SELECT * FROM pracownicy where imie like "%a" and (dzial
         
         
     echo("<p>ZADANIE 7</p>");
-    $conn = new mysqli( "mysql-lauranowak.alwaysdata.net" , "220134" , "Haslo123" , "lauranowak_23");
+    $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
         $result = $conn->query('SELECT imie, dzial, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and dzial = 1 and zarobki between 20 and 40');
             echo("<table>");
             echo("<th>Imie</th>");
