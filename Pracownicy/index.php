@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <link rel="stylesheet" href="/Assets/style.css">
+        <link rel="stylesheet" href="style.css">
         
 </head>
 <body>
@@ -15,16 +15,16 @@
 <ul>
 
 <li class="nav_link"><a href="https://github.com/SK-2019/php-sql-wprowadzenie-LauraNowak">Github</a></li>
-<li class="nav_link"><a href="/Pracownicy/pracownicy.php">Pracownicy</a></li>
-<li class="nav_link"><a href="/Pracownicy/funkcjeAgregujace.php">Funkcje Agregujace</a></li>
-<li class="nav_link"><a href="/Pracownicy/index.php">Strona główna</a></li>
-<li class="nav_link"><a href="/Pracownicy/pracownicyiorganizacja.php">Pracownicy i Organizacja</a></li>
-<li class="nav_link"><a href="/Pracownicy/dataiczas.php">Data i czas</a></li>
+<li class="nav_link"><a href="pracownicy.php">Pracownicy</a></li>
+<li class="nav_link"><a href="funkcjeAgregujace.php">Funkcje Agregujace</a></li>
+<li class="nav_link"><a href="index.php">Strona główna</a></li>
+<li class="nav_link"><a href="pracownicyiorganizacja.php">Pracownicy i Organizacja</a></li>
+<li class="nav_link"><a href="dataiczas.php">Data i czas</a></li>
 <li class="nav_link"><a href="/Ćwiczenia/formularz.html">Formularz</a></li>
-<li class="nav_link"><a href="/Pracownicy/daneDoBazy.php">Dane Do Bazy</a></li>
+<li class="nav_link"><a href="daneDoBazy.php">Dane Do Bazy</a></li>
 <li class="nav_link"><a href="/Ćwiczenia/function.php">Function</a></li>
-<li class="nav_link"><a href="/Biblioteka/ksiazki.php">Książki</a></li> 
-<li class="nav_link"><a href="/Biblioteka/wyporzyczanie.php">Wyporzyczanie</a></li>
+<li class="nav_link"><a href="ksiazki.php">Książki</a></li> 
+<li class="nav_link"><a href="wyporzyczanie.php">Wyporzyczanie</a></li>
 </ul>
 </div>
 
