@@ -17,7 +17,7 @@
 <li class="nav_link"><a href="https://github.com/SK-2019/php-sql-wprowadzenie-LauraNowak">Github</a></li>
 <li class="nav_link"><a href="/Pracownicy/pracownicy.php">Pracownicy</a></li>
 <li class="nav_link"><a href="/Pracownicy/funkcjeAgregujace.php">Funkcje Agregujace</a></li>
-<li class="nav_link"><a href="/Pracownicy/index.php">Strona główna</a></li>
+<li class="nav_link"><a href="index.php">Strona główna</a></li>
 <li class="nav_link"><a href="/Pracownicy/pracownicyiorganizacja.php">Pracownicy i Organizacja</a></li>
 <li class="nav_link"><a href="/Pracownicy/dataiczas.php">Data i czas</a></li>
 <li class="nav_link"><a href="/Ćwiczenia/formularz.html">Formularz</a></li>
