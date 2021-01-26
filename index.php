@@ -20,9 +20,9 @@
 <li class="nav_link"><a href="index.php">Strona główna</a></li>
 <li class="nav_link"><a href="pracownicyiorganizacja.php">Pracownicy i Organizacja</a></li>
 <li class="nav_link"><a href="dataiczas.php">Data i czas</a></li>
-<li class="nav_link"><a href="formularz.html">Formularz</a></li>
+<li class="nav_link"><a href="formularz.html">Ćwiczenia/Formularz</a></li>
 <li class="nav_link"><a href="daneDoBazy.php">Dane Do Bazy</a></li>
-<li class="nav_link"><a href="function.php">Function</a></li>
+<li class="nav_link"><a href="function.php">Ćwiczenia/Function</a></li>
 <li class="nav_link"><a href="ksiazki.php">Książki</a></li> -->
 <!-- <li class="nav_link"><a href="wyporzyczanie.php">Wyporzyczanie</a></li>
 </ul>
