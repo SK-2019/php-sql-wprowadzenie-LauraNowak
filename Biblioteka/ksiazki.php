@@ -28,7 +28,7 @@
   $sql1 = ("SELECT * FROM bibliotekaAutor"); 
   $sql2 = ("SELECT * FROM bibliotekaTytul"); 
   $result=$conn->query($sql1);
-  echo("<form action='wyporzyczanie.php' method='POST'>");
+  echo("<form action='/Biblioteka/wyporzyczanie.php' method='POST'>");
   echo("<label for='Autor'><p>WYBIERZ AUTORA:</p></label>");
   echo("<select name='Autor' id='id_autor'>");
   while($row=$result->fetch_assoc()) 
