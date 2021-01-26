@@ -13,17 +13,13 @@
 <div class="menu">
 <h2> MENU: </h2>
 <ul>
-<a href="https://github.com/SK-2019/php-sql-wprowadzenie-LauraNowak">Github</a>
-<a href="pracownicy.php">Pracownicy</a></li>
-<a href="funkcjeAgregujace.php">Funkcje Agregujace</a>
-<a href="index.php">Strona główna</a>
-<a href="pracownicyiorganizacja.php">Pracownicy i Organizacja</a>
-<a href="dataiczas.php">Data i czas</a>
-<a href="formularz.html">Formularz</a>
-<a href="daneDoBazy.php">Dane Do Bazy</a>
-<a href="function.php">Function</a>
-<a href="ksiazki.php">Książki</a>
-
+<a href="https://github.com/SK-2019/php-sql-wprowadzenie-LauraNowak">GITHUB</a>;
+<a href="index.php">Index</a>;
+<a href="pracownicy.php">Pracownicy</a>;
+<a href="dataiczas.php">Data i czas</a>;
+<a href="formularz.html">Formularz</a>;
+<a href="danedobazy.php">Dane do bazy</a>;
+<a href="ksiazki.php">Książki</a>;
 
 
 <!-- <li class="nav_link"><a href="https://github.com/SK-2019/php-sql-wprowadzenie-LauraNowak">Github</a></li>
