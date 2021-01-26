@@ -14,7 +14,7 @@
 <h2> MENU: </h2>
 <ul>
 <li class="nav_link"><a href="https://github.com/SK-2019/php-sql-wprowadzenie-LauraNowak">Github</a></li>
-<li class="nav_link"><a href="index.php">Strona główna</a></li>
+<li class="nav_link"><a href="/index.php">Strona główna</a></li>
 <li class="nav_link"><a href="pracownicy.php">Pracownicy</a></li>
 <li class="nav_link"><a href="funkcjeAgregujace.php">Funkcje Agregujace</a></li>
 <li class="nav_link"><a href="pracownicyiorganizacja.php">Pracownicy i Organizacja</a></li>
