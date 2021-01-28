@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="/Assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
         
 </head>
 <body>
@@ -23,7 +23,7 @@
 <div class="bok">
 <?php
   
-  require_once("../Assets/connect.php");
+  require_once("../assets/connect.php");
 
   $sql1 = ("SELECT * FROM bibliotekaAutor"); 
   $sql2 = ("SELECT * FROM bibliotekaTytul"); 
@@ -107,7 +107,7 @@
   
 
 //lek
-    require_once("../Assets/connect.php");
+    require_once("../assets/connect.php");
     $sql = ("SELECT * FROM bibliotekaAutor");
     echo("<p>LISTA Z NAZWAMI AUTORÓW</p>");
     
