@@ -40,7 +40,7 @@ echo("<li>data urodzenia: ".$_POST['data_urodzenia']."</li>");
   
   //echo($sql);
 
-  require_once("connect.php");
+  require_once("../assets/connect.php");
 if ($conn->query($sql) === TRUE) {
         echo("<p>Dodano nowego pracownika</p>");
       } else {

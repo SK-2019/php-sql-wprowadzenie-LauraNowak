@@ -33,7 +33,7 @@ echo ("<h1>id: ".$_POST['id']."</h1>");
 
  $sql = "DELETE FROM pracownicy WHERE id_pracownicy='".$_POST['id']."'";
 
- require_once("connect.php");
+ require_once("../assets/connect.php");
 if ($conn->query($sql) === TRUE) {
         echo("<h1> Usunięto </h1>");
       } else {
