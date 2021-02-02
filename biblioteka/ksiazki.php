@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
 <title>Laura Nowak 2Ti</title>
 <link rel="stylesheet" href="/assets/style.css">
 
