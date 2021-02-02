@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <title>Laura Nowak 2Ti</title>
-        <link rel="stylesheet" href="/assets/style.css">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+<title>Laura Nowak 2Ti</title>
+<link rel="stylesheet" href="/assets/style.css">
         
 </head>
 <body>
