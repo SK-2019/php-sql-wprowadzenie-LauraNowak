@@ -27,6 +27,7 @@
 <li class="nav_link"><a href="/ćwiczenia/function.php">Function</a></li>
 <li class="nav_link"><a href="/biblioteka/ksiazki.php">Książki</a></li> 
 <li class="nav_link"><a href="/biblioteka/wyporzyczanie.php">Wyporzyczanie</a></li>
+<li class="nav_link"><a href="flexbox.php">Flexbox</a></li>
 </ul>
 </div>
 
