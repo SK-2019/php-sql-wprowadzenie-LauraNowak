@@ -119,7 +119,11 @@ li {
   flex-wrap: wrap;
 }
 
-.menu {
+
+
+
+
+.menu1 {
   background-color: rgba(156, 39, 176, 0.2);
   padding: 1rem;
   display: flex;
@@ -148,10 +152,10 @@ li {
 .menu2 {
   color: rgb(191, 223, 145);
   background-color: rgb(166, 117, 190);
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
-.menu {
+.menu1 {
   background-color: rgba(156, 39, 176, 0.2);
   padding: 1rem;
   display: flex;
@@ -171,14 +175,14 @@ li {
   padding: 0.2rem;
   list-style: none;
   width: 30%;
-  height: 30vh;
+  height: 20vh;
 }
 
-.main {
+.main1 {
   background-color:  rgb(235, 179, 179);
   padding: 0.2rem;
   list-style: none;
-  width: 65%;
+  width: 60%;
 }
 
 .footer {
@@ -186,5 +190,5 @@ li {
   padding: 0.2rem;
   list-style: none;
   width: 100%;
-  height: 10vh;
+  height: 8vh;
 }
