@@ -144,7 +144,7 @@ li {
   display: block;
   text-decoration: none;
   color: black;
-  background-color: rgb(230, 230, 175);
+  background-color: rgb(33, 206, 18);
   text-align: center;
   width: 20%;
 }
@@ -178,12 +178,12 @@ li {
   height: 20vh;
 }
 
-.main1 {
+/* .main1 {
   background-color:  rgb(235, 179, 179);
   padding: 0.2rem;
   list-style: none;
   width: 60%;
-}
+} */
 
 .footer {
   background-color:  rgb(235, 179, 179);

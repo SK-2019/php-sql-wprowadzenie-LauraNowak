@@ -12,7 +12,7 @@
     <h1>FLEXBOX - Laura Nowak</h1>
 
 
-    <ul class="menu1">
+    
       <li class="menu_item">
         <a class="item_link" href="http://">111</a>
       </li>
@@ -25,9 +25,9 @@
       <li class="menu_item">
         <a class="item_link" href="http://">4444</a>
       </li>
-    </ul>
+    
 
-    <ul class="menu1">
+    
       <li class="menu_item header">
         <a class="item_link" href="http://">111</a>
       </li>
@@ -40,7 +40,7 @@
       <li class="menu_item footer">
         <a class="item_link" href="http://">44444</a>
       </li>
-    </ul>
+    
 
     <a class="menu2" href="http://">666666</a>
     <a class="menu2" href="http://">55555</a>
