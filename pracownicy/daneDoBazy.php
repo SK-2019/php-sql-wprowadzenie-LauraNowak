@@ -51,7 +51,7 @@
 <?php
 
     echo("<p>WSZYSCY PRACOWNICY:</p>");
-    require_once("config.php");
+    require_once("../assets/connect.php");
 $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org');       
 echo("<table>");      
 echo("<th>ID</th>");

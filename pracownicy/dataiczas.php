@@ -30,10 +30,10 @@
 <div class="bok">
 
 <?php
-
+require_once("../assets/connect.php");
 $sql = 'SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek from pracownicy, organizacja where dzial=id_org';
 echo("<p>WIEK POSZCZEGÓLNYCH PRACOWWNIKÓW</p>");
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>ID</th>");
@@ -54,7 +54,6 @@ $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123"
   
    $sql = 'SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy, organizacja WHERE dzial=id_org AND nazwa_dzial="serwis"';
 echo("<p>WIEK POSZCZEGÓLNYCH PRACOWNIKÓW Z DZIAŁU SERWISU</p>");
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>ID</th>");
@@ -75,7 +74,7 @@ $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123"
    
     $sql = 'SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja WHERE dzial=id_org';
 echo("<p>SUMA LAT WSZYSTKICH</p>");
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>Wiek_wszystkich_pracownikow</th>");
@@ -89,7 +88,7 @@ $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123"
   
    $sql = 'SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja WHERE dzial=id_org and nazwa_dzial="handel"';
 echo("<p>SUMA LAT PRACOWNIKÓW Z DZIAŁU HANDEL</p>");
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>Wiek_pracownikow_handel</th>");
@@ -104,7 +103,7 @@ $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123"
    
    $sql = 'SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy where imie like "%a"';
 echo("<p>SUMA LAT KOBIET</p>");
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>Wiek_kobiet</th>");
@@ -120,7 +119,7 @@ $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123"
     $sql = 'SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy where imie not like "%a"';
 echo("<p>SUMA LAT MĘŻCZYZN</p>");
 
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>Wiek_mężczyzn</th>");
@@ -136,7 +135,7 @@ $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123"
     $sql = 'SELECT dzial, avg(YEAR(CURDATE()) - YEAR(data_urodzenia)) as srednia, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial';
 echo("<p>ŚREDNIA LAT PRACOWNIKÓW W POSZCZEGÓLNYCH DZIAŁACH</p>");
 
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>dzial</th>");
@@ -153,7 +152,7 @@ $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123"
   
     $sql = 'SELECT dzial, sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as suma, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial';
 echo("<p>SUMA LAT PRACOWNIKÓW W POSZCZEGÓLNYCH DZIAŁACH</p>");
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>dzial</th>");
@@ -172,7 +171,7 @@ $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123"
 echo("<p>NAJSTARCI PRACOWNICY W KAŻDYM DZIALE</p>");
 
 
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>dzial</th>");
@@ -189,7 +188,7 @@ $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123"
   
     $sql = 'SELECT min(YEAR(CURDATE()) - YEAR(data_urodzenia)) as min, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (nazwa_dzial="handel" OR nazwa_dzial="serwis") group by dzial';
 echo("<p>NAJMŁODZI PRACOWNICY Z DZIAŁU HANDEL I SERWIS NAZWA_DZIAŁ WIEK</p>");
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>Wiek_najmłodsi</th>");
@@ -206,7 +205,7 @@ $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123"
   
   $sql = 'Select min(year(curdate())-year(data_urodzenia)) as minwiek, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (nazwa_dzial="handel" or nazwa_dzial="serwis") group by nazwa_dzial';
 echo("<p>NAJMŁODZI PRACOWNICY Z DZIAŁU HANDEL I SERWIS IMIĘ NAZWA_DZIAŁ WIEK</p>");
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>Wiek</th>");
@@ -223,7 +222,7 @@ $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123"
   
    $sql = 'SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) as dni_zycia from pracownicy';
 echo("<p>DŁUGOŚĆ ŻYCIA PRACOWNIKÓW W DNIACH</p>");
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>Imie</th>");
@@ -238,7 +237,7 @@ $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123"
    
       $sql = 'SELECT * from pracownicy where imie not like "%a" order by data_urodzenia asc limit 1';
 echo("<p>NAJSTARSZY MĘŻCZYZNA</p>");
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+
  $result = $conn->query($sql);
         echo("<table border>");
          echo("<th>ID</th>");
