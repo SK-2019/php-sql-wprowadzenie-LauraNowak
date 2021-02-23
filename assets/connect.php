@@ -5,7 +5,7 @@ $password = $_SERVER['password'];
 $dbname = $_SERVER['dbname']; 
 
 // Create connection (łącze się z moją bazą danych)
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection (sprawdzam połączenie z bazą danych)
 if ($conn->connect_error) {
