@@ -32,7 +32,7 @@
 <?php
   require_once("../assets/connect.php");
         echo("<p>SUMA ZAROBKÓW WSZYSTKICH PRACOWNIKÓW</p>");
-        $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+        
         echo("<table>");
         echo("<th>Dzial</th>");
         echo("<th>Suma</th>");
