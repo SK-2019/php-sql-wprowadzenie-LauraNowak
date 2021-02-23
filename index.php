@@ -34,8 +34,17 @@
 <div class="bok">
 
 <?php
+$hostname = $_SERVER['HTTP_HOST'];
 
-echo("<h3> hostname : ".$_SERVER['HTTP_HOST']);
+if ($hostname == 'localhost:8003') {
+    require_once ("config.php");
+}
+echo("<li> hostname : ".$hostname);
+echo("<li> SERVER passsword: ".$_SERVER['pass']);
+?>
+<?php
+
+
 $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
 $sql = 'SELECT * FROM pracownicy';
 
