@@ -26,7 +26,7 @@
 <div class="bok">
 <?php
   
-  require_once("../assets/connect.php");
+  require_once("config.php");
 
   $sql1 = ("SELECT * FROM bibliotekaAutor"); 
   $sql2 = ("SELECT * FROM bibliotekaTytul"); 
