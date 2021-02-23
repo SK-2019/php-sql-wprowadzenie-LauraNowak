@@ -26,7 +26,7 @@
 <div class="bok">
 <?php
   
-  require_once("config.php");
+  require_once("../assets/connect.php");
 
   $sql1 = ("SELECT * FROM bibliotekaAutor"); 
   $sql2 = ("SELECT * FROM bibliotekaTytul"); 
@@ -110,7 +110,7 @@
   
 
 //lek
-require_once("config.php");
+    require_once("../assets/connect.php");
     $sql = ("SELECT * FROM bibliotekaAutor");
     echo("<p>LISTA Z NAZWAMI AUTORÓW</p>");
     
