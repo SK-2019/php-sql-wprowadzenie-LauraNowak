@@ -35,6 +35,7 @@
 
 <?php
 
+echo("<h3> hostname : ".$_SERVER['HTTP_HOST']);
 $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
 $sql = 'SELECT * FROM pracownicy';
 
