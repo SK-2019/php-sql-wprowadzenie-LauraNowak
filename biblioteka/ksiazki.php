@@ -110,7 +110,7 @@
   
 
 //lek
-    require_once("../assets/connect.php");
+require_once("config.php");
     $sql = ("SELECT * FROM bibliotekaAutor");
     echo("<p>LISTA Z NAZWAMI AUTORÓW</p>");
     

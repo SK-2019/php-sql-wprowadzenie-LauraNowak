@@ -51,7 +51,7 @@
 <?php
 
     echo("<p>WSZYSCY PRACOWNICY:</p>");
-    $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+    require_once("config.php");
 $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org');       
 echo("<table>");      
 echo("<th>ID</th>");
