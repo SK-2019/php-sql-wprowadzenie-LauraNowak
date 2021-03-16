@@ -32,7 +32,7 @@
 <?php
   
         echo("<p>SUMA ZAROBKÓW WSZYSTKICH PRACOWNIKÓW</p>");
-        $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+        $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
     $result = $conn->query('SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
         echo("<table>");
         echo("<th>Dzial</th>");
@@ -47,7 +47,7 @@
 
 	 
         echo("<p>SUMA ZAROBKÓW WSZYSKICH KOBIET</p>");
-        $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+        $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
     $result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
         echo("<table>");
         echo("<th>Dział</th>");
@@ -68,7 +68,7 @@
     echo("<p>SUMA ZAROBKÓW MĘŻCZYZN PRACUJĄCYCH W DZIALE 2 i 3</p>");
     
     
-    $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+    $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
      $result = $conn->query($sql);
             echo("<table>");
             echo("<th>Suma</th>");
@@ -85,7 +85,7 @@
     echo("<p>ŚREDNIA ZAROBKÓW WSZYSTKICH MĘŻCZYZN</p>");
    
     
-    $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+    $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
      $result = $conn->query($sql);
             echo("<table>");
             echo("<th>Średnia</th>");
@@ -101,7 +101,7 @@
     echo("<p>ŚREDNIA ZAROBKÓW PRACOWNIKÓW Z DZIAŁU 4</p>");
     
     
-    $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+    $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
      $result = $conn->query($sql);
             echo("<table>");
             echo("<th>Średnia</th>");
@@ -118,7 +118,7 @@
     echo("<p>ŚREDNIA ZAROBKÓW MĘŻCZYZN Z DZIAŁU 1 i 2</p>");
     
     
-    $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+    $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
      $result = $conn->query($sql);
             echo("<table>");
             echo("<th>Średnia</th>");
@@ -135,7 +135,7 @@
     echo("<p>WSZYSCY PRACOWNICY</p>");
     
     
-    $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+    $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
      $result = $conn->query($sql);
             echo("<table>");
             echo("<th>Ilość</th>");
@@ -152,7 +152,7 @@
     echo("<p>KOBIETY DZIAŁ 1 I 3</p>");
     
     
-    $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+    $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
      $result = $conn->query($sql);
             echo("<table>");
             echo("<th>Ilość</th>");
@@ -169,7 +169,7 @@ echo("<h1>GROIP BY</h1>");
                 echo("<p>SUMA ZAROBKÓW W POSZCZEGÓLNYCH DZIAŁACH</p>");
                 
                 
-                $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+                $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
                  $result = $conn->query($sql);
                         echo("<table>");
                         echo("<th>Dział</th>");
@@ -188,7 +188,7 @@ echo("<h1>GROIP BY</h1>");
                 echo("<p>ILOŚĆ PRACOWNIKÓW W POSZCZEGÓLNYCH DZIAŁACH</p>");
                 
                 
-                $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+                $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
                  $result = $conn->query($sql);
                         echo("<table>");
                         echo("<th>Dział</th>");
@@ -206,7 +206,7 @@ echo("<h1>GROIP BY</h1>");
                        $sql = 'SELECT dzial, avg(zarobki) as srednia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial';
                 echo("<p>ŚREDNIE ZAROBKÓW W POSZCZEGÓLNYCH DZIAŁACH</p>");
                 
-                $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+                $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
                  $result = $conn->query($sql);
                         echo("<table>");
                         echo("<th>Dział</th>");
@@ -224,7 +224,7 @@ echo("<h1>GROIP BY</h1>");
                 echo("<p>SUMA ZAROBKÓW KOBIET I MĘŻCZYZN</p>");
                 
                 
-                $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+                $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
                  $result = $conn->query($sql);
                        echo("<table border>");
                        echo("<th>Suma</th>");
@@ -239,7 +239,7 @@ echo("<h1>GROIP BY</h1>");
                 
                      $sql = 'SELECT avg(zarobki) as srednia, if(imie like "%a", "Kobiety", "Mężczyźni") as plec FROM pracownicy group by plec';
                 echo("<p>ŚREDNIA ZAROBKÓW KOBIET I MĘŻCZYZN</p>");
-                $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+                $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
          $result = $conn->query($sql);
                 echo("<table border>");
                 echo("<th>Średnia</th>");
@@ -255,7 +255,7 @@ echo("<h1>klauzula HAVING</h1>");
 
 $sql = 'SELECT sum(zarobki) as suma, dzial, nazwa_dzial from pracownicy, organizacja where dzial=id_org GROUP BY dzial HAVING sum(zarobki)<28';
 echo("<p>SUMA ZAROBKÓW W POSZCZEGÓLNYCH DZIAŁACH MNIEJSZA OD 28</p>");
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+$conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
 $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Suma</th>");
@@ -273,7 +273,7 @@ $result = $conn->query($sql);
 
 	   $sql = 'SELECT avg(zarobki) as srednia, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org AND imie not like "%a" group by dzial having avg(zarobki)>30';
 echo("<p>ŚREDNIA ZAROBKÓW W POSZCZEGÓLNYCH DZIAŁACH WIĘKSZA OD 30</p>");
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+$conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
 $result = $conn->query('SELECT avg(zarobki) as srednia, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org AND imie not like "%a" group by dzial having avg(zarobki)>30');
         echo("<table>");
         echo("<th>Średnia</th>");
@@ -289,7 +289,7 @@ $result = $conn->query('SELECT avg(zarobki) as srednia, dzial, nazwa_dzial FROM 
 	
 	 $sql = 'SELECT count(imie) as ilosc, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org group by dzial having count(imie)>3';
 echo("<p>ILOŚĆ PRACOWNIKÓW W POSZCZEGÓLNYCH DZIAŁACH WIEKSZA OD 3</p>");
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+$conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");;
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Ilość</th>");
