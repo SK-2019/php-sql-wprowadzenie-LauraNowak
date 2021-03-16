@@ -33,7 +33,7 @@
 <?php
 
 
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+$conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
 $sql = 'SELECT * FROM pracownicy';
 
        
@@ -55,7 +55,7 @@ $result = $conn->query($sql);
         echo("</table>");
 
         echo("<p>PRACOWNICY Z DZIAŁU 2</p>");
-        $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+        $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
 $result = $conn->query('SELECT  * FROM pracownicy WHERE dzial=2');
         echo("<table>");
         echo("<th>id</th>");
@@ -72,7 +72,7 @@ $result = $conn->query('SELECT  * FROM pracownicy WHERE dzial=2');
 
         echo("<p>PRACOWNICY Z DZIAŁU 2 i 3</p>");
 
-        $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+        $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
 $result = $conn->query('SELECT * FROM pracownicy where (dzial=2 or dzial=3)');
         echo("<table>");
         echo("<th>id</th>");
@@ -90,7 +90,7 @@ $result = $conn->query('SELECT * FROM pracownicy where (dzial=2 or dzial=3)');
 
 
         echo("<p>PRACOWNICY Z ZAROBKAMI MNIEJSZYMI OD 30</p>");
-        $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+        $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
 $result = $conn->query('SELECT  * FROM pracownicy WHERE zarobki<30');
         echo("<table>");
         echo("<th>Imie</th>");

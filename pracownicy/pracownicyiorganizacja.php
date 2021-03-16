@@ -32,7 +32,7 @@
 <?php
 
     echo("<p>PRACOWNICY Z NAZWĄ DZIAŁU</p>");
-    $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+    $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
         $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org');
             echo("<table>");
             echo("<th>ID</th>");
@@ -51,7 +51,7 @@
     
     
             echo("<p> PRACOWNICY TYLKO Z DZIALU 1 I 4.</p>");
-            $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+            $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
     $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org and (dzial=1 or dzial=4)');
             echo("<table>");
             echo("<th>ID</th>");
@@ -70,7 +70,7 @@
 
 
     echo("<p> LISTA KOBIET Z NAZWAMI DZIAŁÓW</p>");
-    $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+    $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
         $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie like "%a"');
             echo("<table>");
             echo("<th>ID</th>");
@@ -88,7 +88,7 @@
                    
 
     echo("<p>LISTA MĘŻCZYZN Z NAZWAMI DZIAŁÓW</p>");     
-    $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+    $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
         $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie not like "%a"');
             echo("<table>");
             echo("<th>ID</th>");
@@ -109,7 +109,7 @@ echo("<h1>SORTOWANIE</h1>");
      
                    
     echo("<p>PRACOWNICY POSORTOWANI MALEJĄCO</p>");
-    $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+    $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
         $result = $conn->query('SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org order by imie desc');
             echo("<table>");
             echo("<th>ID</th>");
@@ -127,7 +127,7 @@ echo("<h1>SORTOWANIE</h1>");
              
 
     echo("<p>PRACOWNICY Z DZIAŁU 3 POSORTOWANI ROSNĄCO PO IMIENIU</p>");
-    $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+    $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
         $result = $conn->query('SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org and dzial=3 order by imie asc');
             echo("<table>");
             echo("<th>ID</th>");
@@ -146,7 +146,7 @@ echo("<h1>SORTOWANIE</h1>");
 echo("<h1>LIMIT</h1>");
 
     echo("<p>KOBIETY POSORTOWANE ROSNĄCO PO IMIENIU</p>");
-    $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+    $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
         $result = $conn->query('SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org and imie like "%a" order by imie asc');
             echo("<table>");
             echo("<th>ID</th>");
@@ -164,7 +164,7 @@ echo("<h1>LIMIT</h1>");
                                     
                         
     echo("<p>KOBIETY Z DZIAŁU 1 i 3 POSORTOWANE ROSNĄCO PO ZAROBKACH </p>");
-    $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+    $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
         $result = $conn->query('SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org and imie like "%a" order by imie asc');
             echo("<table>");
             echo("<th>ID</th>");
@@ -182,7 +182,7 @@ echo("<h1>LIMIT</h1>");
                                 
                           
     echo("<p>MĘŻCZYŹNI POSORTOWANI ROSNĄCO: PO ZAROBKACH</p>");
-    $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+    $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
         $result = $conn->query('SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE "%a" and (dzial = 1 OR dzial=3) order by zarobki desc');
             echo("<table>");
             echo("<th>ID</th>");
@@ -200,7 +200,7 @@ echo("<h1>LIMIT</h1>");
 
             
             echo("<p>DWÓCH NAJLEPIEJ ZARABIAJĄCYCH PRACOWNIKÓW Z DZIAŁU 4</p>");
-            $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+            $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
     $result = $conn->query('SELECT * from pracownicy, organizacja where dzial=id_org and dzial=4 order by zarobki desc limit 2');
         echo("<table>");
 	    echo("<th>ID</th>");
@@ -221,7 +221,7 @@ echo("<h1>LIMIT</h1>");
 echo("<p>TRZY NAJLEPIEJ ZARABIAJĄCE KOBIETY Z DZIAŁU 4 I 2</p>");
 
 
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+$conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
     $result = $conn->query('SELECT * from pracownicy, organizacja where dzial=id_org and (dzial=4 or dzial=2) order by zarobki desc limit 3');
         echo("<table>");
 	    echo("<th>ID</th>");
@@ -242,7 +242,7 @@ $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123"
 
 
 echo("<p>NAJSTARSZY PRACOWNIK</p>");
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+$conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
  $result = $conn->query('Select * From pracownicy, organizacja where dzial=id_org order by data_urodzenia asc limit 1');
         echo("<table>");
 	    echo("<th>ID</th>");

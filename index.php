@@ -45,7 +45,7 @@ echo("<li> SERVER passsword: ".$_SERVER['pass']);
 <?php
 
 
-$conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+$conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
 $sql = 'SELECT * FROM pracownicy';
 
        
@@ -68,7 +68,7 @@ $result = $conn->query($sql);
         echo("<p>ZADANIE 2</p>");
        
 
-        $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+        $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
 $result = $conn->query('SELECT * FROM pracownicy where imie like "%a"');
         
         echo("<table>");
@@ -87,7 +87,7 @@ $result = $conn->query('SELECT * FROM pracownicy where imie like "%a"');
         echo("<p>ZADANIE 3</p>");
       
 
-        $conn = new mysqli( "mysql-lauranowak-23.alwaysdata.net" , "225095" , "Haslo123" , "lauranowak-23_23");
+        $conn = new mysqli( "mysql-lauranowak-2303.alwaysdata.net" , "229671" , "Haslo123" , "lauranowak-2303_23");
 $result = $conn->query('SELECT * FROM pracownicy where imie like "%a" and (dzial=1 or dzial=4)');
         echo("<table>");
         echo("<th>id</th>");
