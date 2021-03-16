@@ -43,7 +43,8 @@ echo("<li> hostname : ".$hostname);
 echo("<li> SERVER passsword: ".$_SERVER['pass']);
 
 
-
+$d=strtotime("now");
+          echo "<li>".date("Y-m-d h:i:sa", $d) . "<br>";
 
 
 
